@@ -85,7 +85,7 @@ def playerStandings():
     """
     DB = connect()
     c = DB.cursor()
-    c.execute("SELECT player_id, name,matches_won, matches_played FROM Standings");
+    c.execute("SELECT player_id, name,matches_won, matches_played FROM Standings ORDER BY matches_won DESC");
     count = c.fetchall()
     DB.commit()
     DB.close()
