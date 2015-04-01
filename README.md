@@ -55,3 +55,7 @@ The various functions and their corresponding test functions are:
 6)registerTournament() - adds a tournament to the database.
 
 7)playerStandings()-Returns a list of the players and their win records, sorted by wins.
+
+8)reportMatch()-Stores the outcome of a single match between two players in the database.
+
+9)swissPairings()-Returns a list of pairs of players for the next round of a match.
