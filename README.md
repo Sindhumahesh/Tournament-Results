@@ -20,19 +20,38 @@ Reguirements:
 
 Files Included In The Project:
 
-1)tournament.sql-Contains of database schemas.
+1)tournament.sql-Contains of database schemas in the form of SQL create table commands.
 
-2)tournament.py-Contains of python functions.
+2)tournament.py-Contains of codefor your module.
 
 3)tournament_test.py- Contains unit tests that will test the functions you’ve written in tournament.py.
 You can run the tests from the command line, using the command python tournament_test.py.
 
 How to start with the project:
 
-
    - Install Vagrant and VirtualBox
    - Clone the fullstack-nanodegree-vm repository
    - Launch the Vagrant VM
    - Write SQL database and table definitions in a file (tournament.sql)
+   - Use the command psql tournament to connect to the database tournament.
+   - Use the command \i tournament.sql to import the whole file into psql at once.
    - Write Python functions filling out a template of an API (tournament.py)
    - Run a test suite to verify your code (tournament_test.py)
+   
+Functions in tournament.py:
+
+The various functions and their corresponding test functions are:
+
+1)connect - connects to the database.
+
+2)deleteMatches() - deletes all matches records from the database.
+
+3)deletePlayers() - deletes all players records from the database.
+
+4)countPlayers() -returns the number of players currently registered.
+
+5)registerPlayer() -adds a player to the database.
+
+6)registerTournament() - adds a tournament to the database.
+
+7)playerStandings()-Returns a list of the players and their win records, sorted by wins.
