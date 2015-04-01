@@ -8,11 +8,7 @@
 
 
 
-
-DROP TABLE IF EXISTS players;
-DROP TABLE IF EXISTS matches;
-DROP TABLE IF EXISTS tournaments;
-DROP VIEW IF EXISTS standings;
+DROP DATABASE tournament;
 CREATE DATABASE tournament;
 
 CREATE TABLE players(
