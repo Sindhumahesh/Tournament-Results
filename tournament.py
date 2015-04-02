@@ -85,7 +85,7 @@ def playerStandings():
     """
     DB = connect()
     c = DB.cursor()
-    c.execute("SELECT player_id, name,matches_won, matches_played FROM standings ORDER BY matches_won DESC");
+    c.execute("SELECT player_id, name,matches_won, matches_played FROM standings");
     count = c.fetchall()
     DB.commit()
     DB.close()
@@ -93,7 +93,7 @@ def playerStandings():
     
 
 
-def reportMatch(winner, loser,draw):
+def reportMatch(winner, loser):
     """Records the outcome of a single match between two players.
 
     Args:

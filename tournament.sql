@@ -8,7 +8,7 @@
 
 
 
-DROP DATABASE tournament;
+DROP DATABASE IF EXISTS tournament;
 CREATE DATABASE tournament;
 
 CREATE TABLE players(
