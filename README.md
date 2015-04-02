@@ -10,7 +10,7 @@ The game tournament will use the Swiss system for pairing up players in each rou
 and each player should be paired with another player with the same number of wins, or as close as possible.
 
 
-Reguirements:
+Requirements:
 
 1)Vagrant
 
@@ -48,14 +48,14 @@ The various functions and their corresponding test functions are:
 
 3)deletePlayers() - deletes all players records from the database.
 
-4)countPlayers() -returns the number of players currently registered.
+4)countPlayers() - returns the number of players currently registered.
 
-5)registerPlayer() -adds a player to the database.
+5)registerPlayer() - adds a player to the database.
 
-6)registerTournament() - adds a tournament to the database.
+6)playerStandings() - Returns a list of the players and their win records, sorted by wins.
 
-7)playerStandings()-Returns a list of the players and their win records, sorted by wins.
+7)reportMatch() - Stores the outcome of a single match between two players in the database.
 
-8)reportMatch()-Stores the outcome of a single match between two players in the database.
+8)swissPairings() - Returns a list of pairs of players for the next round of a match.
 
-9)swissPairings()-Returns a list of pairs of players for the next round of a match.
+9)registerTournament() - adds a tournament to the database.
