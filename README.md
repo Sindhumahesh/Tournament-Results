@@ -3,7 +3,7 @@ Udacity Project2
 
 DESCRIPTION:
 
-In this project, you’ll be writing a Python module that uses the PostgreSQL database to keep 
+In this project, we will be writing a Python module that uses the PostgreSQL database to keep 
 track of players and matches in a game tournament.
 
 The game tournament will use the Swiss system for pairing up players in each round: players are not eliminated,
